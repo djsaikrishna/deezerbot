@@ -16,3 +16,8 @@ jobs:
           docker_heroku_process_type: worker
           stack: "container"
           region: "us"
+        env:
+          HD_BOT_LANG: ${{secrets.BOT_LANG}}
+          HD_DEEZER_TOKEN: ${{secrets.DEEZER_TOKEN}}
+          HD_TELEGRAM_TOKEN: ${{secrets.TELEGRAM_TOKEN}}
+          
